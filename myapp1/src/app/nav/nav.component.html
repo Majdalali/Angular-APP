@@ -1,0 +1,41 @@
+<header>
+    <div class="container">
+        <div  class="nav1" id="nav1">
+            <nav class="black" id="navbar">
+                <a class="white" id="myapp" routerLink="/">Myapp</a>
+                <ul >
+                        
+                        <div class="dropdown">
+                                <button class="dropbtn"><fa-icon class="iconus" [icon]="faUserCircle"></fa-icon></button>
+                                <div class="dropdown-content">
+                                    <a *ngIf="authservices.display()"  class="a a1"  routerLink="./profile">Profile</a>
+                                        <a *ngIf="authservices.display()"  class="a a1"  routerLink="./dashboard">Dashboard</a>
+                                        <a *ngIf="!authservices.display()"  class="a a1"  routerLink="./register">Register</a>
+                                     <a *ngIf="!authservices.display()"  class="a a1"  routerLink="./login">Login</a>
+                                        <a *ngIf="authservices.display()" class="a a1" (click)="onlogOut()" href="#">Log out</a>
+
+                                       
+                                  
+                                </div>
+                              </div>
+                     
+                <!-- <li>
+                    <a class="a a1" (click)="onlogOut()" href="#">Log out</a>
+                </li>
+                 <li>
+                     <a class="a a1"  routerLink="./login">Login</a>
+                    </li> -->
+               
+                <li>
+                    <a class="a a1" routerLink="./contact">Contact</a>
+                </li>
+                <li>
+                    <a class="a a1" routerLink="./about">About</a>
+                </li>
+                <li>
+                    <a class="a " id="home" routerLink="./">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div></header>

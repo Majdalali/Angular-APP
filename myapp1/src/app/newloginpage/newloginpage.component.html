@@ -1,0 +1,62 @@
+<form (submit)="onLoginSubmit()" class="form" [formGroup]="myForm">
+    <h2>Register :</h2>
+
+        <h3>Name  </h3>
+
+    <mat-form-field >
+        
+      <input type="text" matInput placeholder="Type your name" formControlName="name">
+
+      <mat-error *ngIf="name1.invalid && name1.touched ">
+          Please enter a valid name 
+      </mat-error>
+      
+
+    </mat-form-field>
+
+        <h3>Username  </h3>
+
+    <mat-form-field >
+        
+        <input type="text" matInput placeholder="Type your username" formControlName="username">
+
+        <mat-error *ngIf="username1.invalid && username1.touched ">
+            Please enter a valid username
+        </mat-error>
+
+    </mat-form-field>
+
+        <h3>Email  </h3>
+
+    <mat-form-field >
+        
+          <input type="text" matInput placeholder="Type your email" formControlName="email">
+
+          <mat-error *ngIf="email1.invalid && email1.touched ">
+              Please enter a valid email
+          </mat-error>
+
+    </mat-form-field>
+        
+
+    <h3>Password  </h3>
+
+    <mat-form-field >
+        
+      <input type="password" matInput placeholder="Type your password" formControlName="password">
+
+      <mat-error *ngIf="password1.invalid && password1.touched ">
+          Please enter a valid password "six characters at least"
+      </mat-error>
+
+    </mat-form-field>
+
+    <button type="submit" mat-raised-button color="primary">Submit</button>
+    <br>
+    <span class="or">Or</span>
+    <div class="orlogin">
+      <h1 class="fce"><a href="#">Login with Facebook</a> </h1>
+      <h1 class="gg"> <a href="#">Login with Google+</a> </h1>
+    </div>
+
+  </form>

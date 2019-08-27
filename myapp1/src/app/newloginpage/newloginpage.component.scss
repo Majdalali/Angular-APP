@@ -1,0 +1,70 @@
+form {
+    background-color: white;
+    width: 40%;
+    margin-left: 30%;
+    border: #fff solid 2px;
+    border-radius: 8px;
+}
+mat-form-field {
+    display: block;
+    width: 80%;
+    margin-left: 10%; 
+    font-family: 'montserrat';
+}
+h2 {
+    color: black;
+    font-size: 30px;
+    padding-top: 1rem;
+    margin-left: 10%; 
+    font-family: 'montserrat';
+
+}
+h3 {
+    margin-left: 10%; 
+    font-size: 15px;
+    font-family: 'montserrat';
+    padding-top: 2px;
+}
+button {
+    margin-left: 10%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+button:hover {
+    background-color: #7971ea;
+}
+.or {
+    margin-left: 50%;
+    padding-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.orlogin {
+    text-align: center;
+}
+.fce {
+    background-color: #3b5998;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 3rem;
+    padding: 4px 4px 4px 4px;
+    color: #f3f3f3;
+    font-size: 28px;
+}
+.gg {
+    background-color: #DD4B39;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 3rem;
+    padding: 4px 4px 4px 4px;
+    width: 50%;
+    margin-left: 25%;
+    color: #f3f3f3;
+    font-size: 28px;    
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

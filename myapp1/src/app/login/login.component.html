@@ -1,0 +1,46 @@
+
+<!-- 
+<form (submit)="onLoginSubmit()">
+    <h3>Login :</h3>
+
+  <div class="form-group">
+    <label >Email</label>
+    <input type="text" class="form-control" [(ngModel)]="email" name="email" placeholder="Type your name">
+    
+  </div>
+  <div class="form-group">
+    <label >Password</label>
+    <input type="password" class="form-control" [(ngModel)]="password" name="password" placeholder="Type your Password">
+    
+  </div>
+<button type="submit" class="btn btn-primary">Submit</button>
+
+</form> -->
+<form (submit)="onLoginSubmit()" *ngIf="!authservices.display()"  class="form" [formGroup]="myForm">
+    <h2>Login :</h2>
+
+        <h3>Email  </h3>
+
+    <mat-form-field >
+        
+      <input matInput type="email" [(ngModel)]="email" placeholder="Type your email" formControlName="email">
+      <mat-error *ngIf="email1.invalid && email1.touched">
+          Please enter a valid email
+      </mat-error>
+    </mat-form-field>
+
+    <h3>Password  </h3>
+
+    <mat-form-field >
+        
+      <input type="password" [(ngModel)]="password" matInput placeholder="Type your password" formControlName="password">
+      <mat-error *ngIf="password1.invalid && password1.touched">
+          Please enter a valid password
+      </mat-error>
+    </mat-form-field>
+
+    <button type="submit" mat-raised-button color="primary">Submit</button>
+    
+
+  </form>
+<mat-error class="loginerr" *ngIf="authservices.display()" >You are already logged in </mat-error>

@@ -1,0 +1,271 @@
+<header>
+  <!-- Sticky li -->
+  <div id="sticky">
+    <ul>
+      <li><a href="#crs">Subscriptions</a></li>
+      <li><a href="#srvh1">Services</a></li>
+      <li><a href="#workdiv">Works</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="row align-items-center" data-aos="fade-up" id="main">
+      <div id="title">
+        <h2>Welcome to our new website</h2>
+        <p>here you will be able to see our new services and news</p>
+      </div>
+      <div class="row align-items-center ">
+        <form class="form-box" (submit)="onRegisterSubmit()" id="form">
+          <h3>Sign up</h3>
+          <input class="put input1" id="" placeholder="name" [(ngModel)]="name" name="name" type="text" />
+          <input class="put input2" id="" placeholder="Username" [(ngModel)]="username" name="username" type="text" />
+          <input class="put erroremail input3" id="" placeholder="Email Address" [(ngModel)]="email" name="email" type="text" />
+          <input
+            class="put input4"
+            id=""
+            placeholder=" password"
+            type="password"
+            [(ngModel)]="password" name="password"
+          />
+          <button
+            class="btn btn-primary btn-pill"
+            id="btn11"
+            type="submit"
+            value="Sign up"
+          >
+            Sign up
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subscriptions -->
+  <div id="crs">
+    <div class="container">
+      <div data-aos="fade-up">
+        <H1>Subscriptions </H1>
+      </div>
+
+      <div
+        class="card card1"
+        data-aos="fade-up"
+        id="cardf"
+        style="width: 18rem;"
+      >
+        <div class="card-body">
+          <h5>BASIC PLAN</h5>
+          <div class="price">
+            <h2>
+              $10
+              <span>/Month</span>
+            </h2>
+          </div>
+            <h5 class="card-title">6 Month subscribe</h5>
+            <h5 class="card-title">20 Template</h5>
+            <h5 class="card-title">24/7 Support</h5>
+
+          <a class="btn btn-primary" href="#" target="_blank">GET</a>
+        </div>
+      </div>
+
+      <div
+        class="card card2"
+        data-aos="fade-up"
+        id="cardf"
+        style="width: 18rem;"
+      >
+        <div class="card-body">
+          <h5>SILVER PLAN</h5>
+          <div class="price">
+            <h2>
+              $20
+              <span>/Month</span>
+            </h2>
+          </div>
+            <h5 class="card-title">3 Month subscribe</h5>
+            <h5 class="card-title">20 Template</h5>
+            <h5 class="card-title">24/7 Support</h5>
+            <a class="btn btn-primary" href="#" target="_blank">GET</a>
+        </div>
+      </div>
+      <div
+        class="card card3"
+        data-aos="fade-up"
+        id="cardf"
+        style="width: 18rem;"
+      >
+        <div class="card-body">
+          <h5>GOLD PLAN</h5>
+          <div class="price">
+            <h2>
+              $30
+              <span>/Month</span>
+            </h2>
+          </div>
+            <h5 class="card-title">Life Time subscibe</h5>
+            <h5 class="card-title">20 Template</h5>
+            <h5 class="card-title">24/7 Support</h5>
+
+            <a class="btn btn-primary" href="#" target="_blank">GET</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-aos-duration="1000" data-aos="fade-left" id="srv">
+    <h1 id="srvh1">Our Services</h1>
+  </div>
+  <!-- CARDs -->
+  <div class="container">
+    <div
+      class="card cardf2"
+      data-aos-duration="1000"
+      data-aos="zoom-in-right"
+      style="width: 18rem;"
+    >
+      <img class="card-img-top" src="{{ netImage3 }}" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">HTML</h5>
+        <p class="card-text">We build your website's code from scratch</p>
+      </div>
+    </div>
+    <div
+      class="card cardf2 cardf3"
+      data-aos-duration="1000"
+      data-aos="zoom-in-right"
+      style="width: 18rem;"
+    >
+      <img class="card-img-top" src="{{ netImage4 }}" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">CSS</h5>
+        <p class="card-text">You draw it and let us make it real for you</p>
+      </div>
+    </div>
+    <div
+      class="card cardf2 cardf4"
+      data-aos-duration="1000"
+      data-aos="zoom-in-right"
+      style="width: 18rem;"
+    >
+      <img class="card-img-top" src="{{ netImage5 }}" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">JS</h5>
+        <p class="card-text">
+          website without functions like bicycle without wheels
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- OUR WORKS -->
+  <div id="work">
+    <div class="container">
+      <div id="workdiv" data-aos-duration="1000" data-aos="fade-right">
+        <h1>Featured Works</h1>
+      </div>
+      <div data-aos-duration="1000" data-aos="zoom-in-left" class="workpho row">
+        <div class=" col-md-4 col-xs-6 work">
+          <img id="myImg" src="{{ netImage6 }}" alt="" />
+          <div class="overlay1">
+            <div class="n">
+              <h4>Work 1</h4>
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-4 col-xs-6 work">
+          <img src="{{ netImage7 }}" alt="" />
+          <div class="overlay1">
+            <div class="n">
+              <h4>Work 2</h4>
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-4 col-xs-6 work">
+          <img src="{{ netImage8 }}" alt="" />
+          <div class="overlay1">
+            <div class="n">
+              <h4>Work 3</h4>
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-4 col-xs-6 work">
+          <img src="{{ netImage9 }}" alt="" />
+          <div class="overlay1">
+            <div class="n">
+              <h4>Work 4</h4>
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-4 col-xs-6 work">
+          <img src="{{ netImage10 }}" alt="" />
+          <div class="overlay1">
+            <div class="n">
+              <h4>Work 5</h4>
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-4 col-xs-6 work">
+          <img src="{{ netImage11 }}" alt="" />
+          <div class="overlay1">
+            <div class="n">
+              <h4>Work 6</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CITY  -->
+  <div id="city">
+    <div class="overlay2">
+      <div class="container">
+        <div class="icons" style="text-align:center">
+          <fa-icon [icon]="faUsers"></fa-icon>
+          <h1><span class="counter">522</span></h1>
+          <h3>clients</h3>
+        </div>
+
+        <div class="icons" style="text-align:center">
+          <fa-icon [icon]="faCoffee"></fa-icon>
+          <h1><span class="counter2">15.5K</span></h1>
+          <h3>Cups of Coffee</h3>
+        </div>
+
+        <div class="icons" style="text-align:center">
+          <fa-icon [icon]="faFile"></fa-icon>
+          <h1><span class="counter3">320</span></h1>
+          <h3>template</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- down -->
+  <div>
+    <p class="down">.</p>
+  </div>
+</header>
+<footer>
+  <div id="footer">
+    <div class="container">
+      <h1>MYAPP</h1>
+      <p>
+        <a target="_blank" href="https://facebook.com/majdosy"
+          ><img src="{{ fa1 }}" alt=""
+        /></a>
+        <a target="_blank" href="https://instagram.com/3.wz"
+          ><img src="{{ fa2 }}" alt=""
+        /></a>
+        <a target="_blank" href="https://twitter.com/majdosy"
+          ><img src="{{ fa3 }}" alt=""
+        /></a>
+      </p>
+      <h4>
+        COPYRIGHT © 2017. ALL RIGHTS RESERVED. DESIGNED BY
+        <a target="_blank" href="https://facebook.com/majdosy">Majd Alali</a>
+      </h4>
+      <p id="TIME"> {{date | date:'mediumDate' }}</p>
+      
+    </div>
+
+  </div>
+</footer>

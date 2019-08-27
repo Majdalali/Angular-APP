@@ -1,0 +1,28 @@
+h1 {
+    color: white;
+    text-align: center;   
+}
+.ul {
+    color: white;
+    list-style: none;
+    text-align: center ;
+   
+    
+    
+}
+li {
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px 10px;
+    
+}
+.main {
+    background-color: chocolate;
+    width: 250px;
+    margin: 0 auto;
+
+}
+.main:hover {
+    background-color: darkgoldenrod;
+    cursor: pointer;
+}

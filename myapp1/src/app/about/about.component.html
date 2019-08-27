@@ -1,0 +1,10 @@
+<!-- <p>about works!</p>
+<textarea [(ngModel)]="enValue"  rows="6"></textarea>
+<hr>
+<button (click)= "onSignedUp()">CLICK</button>
+<hr>
+<p>{{ postArea }}</p> -->
+
+
+<app-post-create (postCreated)="onPostadded($event)"></app-post-create>
+<app-post-list  [posts]="storedPost" ></app-post-list>

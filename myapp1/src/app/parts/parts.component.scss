@@ -1,0 +1,23 @@
+h1 {
+    color: white;
+}
+h3 { 
+    color: white;
+}
+button {
+    margin: 10px 10px;
+    background-color: white;
+    color: darkorchid;
+}
+button.dis1[disabled] {
+    background-color: white;
+    color: darkorchid;
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+button.dis2[disabled] {
+    background-color: white;
+    color: darkorchid;
+    opacity: 0.8;
+    cursor: not-allowed;
+}

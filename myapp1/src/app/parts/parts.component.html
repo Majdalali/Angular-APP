@@ -1,0 +1,22 @@
+<div class="container">
+    <div *ngIf="movieList == 1" class="movie1">
+        <h1>title : ALPHA 2016</h1>
+        <h3>type : ACTION , DRAMA</h3>
+        <h3>date : 2015</h3>
+
+    </div>
+    <div *ngIf="movieList == 2" class="movie2">
+        <h1>title : DELTA FORCES</h1>
+        <h3>type : WAR , SC-IF</h3>
+        <h3>date : 2022</h3>
+        
+    </div>
+    <div *ngIf="movieList == 3" class="movie3">
+        <h1>title : GAMMA IX</h1>
+        <h3>type : ACTION , SPORTS</h3>
+        <h3>date : 2019</h3>
+        
+    </div>
+    <button class="dis1" [disabled]="movieList == 1" mat-raised-button  (click)="onPrevious()">Previous Movie</button>
+    <button  class="dis2" [disabled]="movieList == 3" mat-raised-button  (click)="onNext()">Next Movie</button>
+</div>

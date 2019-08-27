@@ -1,0 +1,27 @@
+
+<form class="input"  (submit)="onSignedUp(postForm)" #postForm="ngForm">
+       
+                        <input ngModel
+                        matInput
+                        type="text"
+                        name="title"
+                        placeholder="Title"
+                        required
+                        
+                        #title="ngModel">
+                        
+                        <textarea [(ngModel)]="contantValue"
+                        placeholder="Type Here..." 
+                        ngModel
+                        matInput
+                        rows="6"
+                        name="contant"
+                        required
+                        minlength="10"
+                        ></textarea>                    
+                        
+                        <button 
+                        type="submit"  >Post</button>
+         
+                
+</form>
